@@ -1,0 +1,148 @@
+:root {
+    --primary-color: #C40233;
+    --secondary-color: #ffffff;
+    --dark: #333333;
+    --medium: #555555;
+    --accent: #5E7A92;
+
+    --heading-font: "Roboto Slab", serif;
+    --body-font: "Open Sans", sans-serif;
+
+    --max-width: 1200px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--dark);
+    line-height: 1.6;
+    background: var(--secondary-color);
+}
+
+
+.page-header {
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.place-title {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+
+.main-image-section {
+    width: 100%;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.data-section,
+.weather-section {
+    width: 90%;
+    background: var(--secondary-color);
+    border: 2px solid var(--dark);
+    margin: 1.5rem auto;
+    padding: 1rem 1.2rem;
+    border-radius: 6px;
+}
+
+.data-section h2,
+.weather-section h2 {
+    font-family: var(--heading-font);
+    margin-bottom: 0.75rem;
+}
+
+.data-list,
+.weather-list {
+    list-style: none;
+}
+
+.data-list li,
+.weather-list li {
+    margin: 0.4rem 0;
+}
+
+.label {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+
+.weather-icon {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.weather-icon img {
+    width: 60px;
+}
+
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: var(--dark);
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+
+
+@media (min-width: 900px) {
+
+    .main-image-section {
+        position: relative;
+    }
+
+    .data-section,
+    .weather-section {
+        position: absolute;
+        width: 280px;
+        background: rgba(255, 255, 255, 0.9);
+    }
+
+    .data-section {
+        left: 10%;
+        top: 250px;
+    }
+
+    .weather-section {
+        right: 10%;
+        top: 370px;
+    }
+
+
+    .weather-icon {
+        display: none;
+    }
+
+
+    .weather-section h2::after {
+        content: "";
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        margin-left: 10px;
+        background-image: url("../images/weather-icon.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cologne</title>
+    <meta name="description" content="Information about the city, current weather with wind chill index and useful data.">
+    <meta name="author" content="Sofia Gallardo">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto+Slab:wght@700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <h1 class="place-title">Cologne</h1>
+    </header>
+
+
+    <section class="main-image-section">
+        <img src="images/köln.webp" alt="Place image" class="main-image">
+    </section>
+
+
+    <section class="data-section">
+        <h2>Data</h2>
+        <ul class="data-list">
+            <li><span class="label">Area:</span> <span class="value">405.15 km²</span></li>
+            <li><span class="label">Population:</span> <span class="value">1,095,520 (2023)</span></li>
+            <li><span class="label">Language:</span> <span class="value">German</span></li>
+            <li><span class="label">Currency:</span> <span class="value">Euros</span></li>
+            <li><span class="label">Time zone:</span> <span class="value">UTC+01:00 and UTC+02:00 (summer)</span></li>
+            <li><span class="label">Calling code:</span> <span class="value">+221</span></li>
+        </ul>
+    </section>
+
+
+    <section class="weather-section">
+        <h2>Weather</h2>
+
+        <div class="weather-icon">
+            <img src="images/weather-icon.svg" alt="Weather icon">
+        </div>
+
+        <ul class="weather-list">
+            <li><span class="label">Temperature:</span> <span class="value">14 °C</span></li>
+            <li><span class="label">Conditions:</span> <span class="value">Cloudy</span></li>
+            <li><span class="label">Wind:</span> <span class="value">10 km/h</span></li>
+            <li><span class="label">Wind Chill:</span> <span class="value" id="windChill">--</span></li>
+        </ul>
+    </section>
+
+
+
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> | Sofia Gallardo | Mexico
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
