@@ -26,42 +26,47 @@
         <h1 class="place-title">Cologne</h1>
     </header>
 
-
-    <section class="main-image-section">
-        <img src="images/köln.webp" alt="Place image" class="main-image">
-    </section>
+    <main>
 
 
-    <section class="data-section">
-        <h2>Data</h2>
-        <ul class="data-list">
-            <li><span class="label">Area:</span> <span class="value">405.15 km²</span></li>
-            <li><span class="label">Population:</span> <span class="value">1,095,520 (2023)</span></li>
-            <li><span class="label">Language:</span> <span class="value">German</span></li>
-            <li><span class="label">Currency:</span> <span class="value">Euros</span></li>
-            <li><span class="label">Time zone:</span> <span class="value">UTC+01:00 and UTC+02:00 (summer)</span></li>
-            <li><span class="label">Calling code:</span> <span class="value">+221</span></li>
-        </ul>
-    </section>
+        <section class="main-image-section">
+            <img 
+             src="images/cologne.webp"
+             srcset="images/cologne.webp 480w, images/cologne.webp 768w, images/cologne.webp 1200w"
+             sizes="(max-width: 600px) 480px, (max-width: 900px) 768px, 1200px"
+             alt="Cologne city view"
+             class="main-image">
+        </section>
 
 
-    <section class="weather-section">
-        <h2>Weather</h2>
-
-        <div class="weather-icon">
-            <img src="images/weather-icon.svg" alt="Weather icon">
-        </div>
-
-        <ul class="weather-list">
-            <li><span class="label">Temperature:</span> <span class="value">14 °C</span></li>
-            <li><span class="label">Conditions:</span> <span class="value">Cloudy</span></li>
-            <li><span class="label">Wind:</span> <span class="value">10 km/h</span></li>
-            <li><span class="label">Wind Chill:</span> <span class="value" id="windChill">--</span></li>
-        </ul>
-    </section>
+        <section class="data-section">
+            <h2>Data</h2>
+            <ul class="data-list">
+                <li><span class="label">Area:</span> <span class="value">405.15 km²</span></li>
+                <li><span class="label">Population:</span> <span class="value">1,095,520 (2023)</span></li>
+                <li><span class="label">Language:</span> <span class="value">German</span></li>
+                <li><span class="label">Currency:</span> <span class="value">Euros</span></li>
+                <li><span class="label">Time zone:</span> <span class="value">UTC+01:00 and UTC+02:00 (summer)</span></li>
+                <li><span class="label">Calling code:</span> <span class="value">+221</span></li>
+            </ul>
+        </section>
 
 
+        <section class="weather-section">
+            <h2>Weather</h2>
 
+            <div class="weather-icon">
+                <img src="images/weather-icon.svg" alt="Weather icon">
+            </div>
+
+            <ul class="weather-list">
+                <li><span class="label">Temperature:</span> <span class="value">14 °C</span></li>
+                <li><span class="label">Conditions:</span> <span class="value">Cloudy</span></li>
+                <li><span class="label">Wind:</span> <span class="value">10 km/h</span></li>
+                <li><span class="label">Wind Chill:</span> <span class="value" id="windChill">--</span></li>
+            </ul>
+        </section>
+    </main>
     <footer>
         <p>
             &copy; <span id="currentyear"></span> | Sofia Gallardo | Mexico
